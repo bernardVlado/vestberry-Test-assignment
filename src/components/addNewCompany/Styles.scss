@@ -1,0 +1,100 @@
+.addNewCompany {
+    height: 70px;
+    border-top: 1px solid rgb(216, 220, 229);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.button {
+    width: 165px;
+    height: 40px;
+    border-radius: 3px;
+    background: white;
+    border: 1px solid rgb(117,136,145);
+    color: rgb(117,136,145);
+}
+
+.buttonWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.buttonFilled {
+    @extend .button;
+    color: white;
+    background: rgb(0,118,130);
+    border: none;
+}
+
+.buttonFilledDisabled {
+    @extend .buttonFilled;
+    opacity: .3;
+    pointer-events: none;
+}
+
+.form {
+    width: 50%;
+    margin: auto;
+}
+
+.formTitle {
+    text-align: center;
+    color: rgb(0,118,130);
+    font-weight: bold;
+}
+
+.input {
+    height: 40px;
+    border: 2px solid rgb(184,195,206);
+    color: rgb(184,195,206);
+    border-radius: 3px;
+    margin-top: 6px;
+    padding: 0px 20px 0px 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.inputInvestmentSize {
+    @extend .input;
+    padding: 0px 60px 0px 20px;
+}
+
+.warning {
+    font-size: 11px;
+    color: red;
+}
+
+.investmentSizePostfix {
+    position: absolute;
+    right: 20px;
+    top: 54%;
+    color: rgb(184,195,206);
+}
+
+.input:focus {
+  outline: none;
+}
+
+.labelBase {
+    display: grid;
+    font-size: 14px;
+}
+
+.label {
+    @extend .labelBase;
+    margin-top: 20px;
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    right: 18px;
+    top: 28px;
+    font-size: 30px;
+    color: rgb(184,195,206)
+}

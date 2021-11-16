@@ -79,6 +79,7 @@ const query = new GraphQLObjectType({
 })
 
 const addCompany = (obj, company) => {
+
   if (company.name.length <= 2) {
     throw new GraphQLError('Company name has to be longer then 2 characters')
   }
@@ -93,8 +94,9 @@ const addCompany = (obj, company) => {
   }
   companies.push({
     id: companies.length,
-    company,
+    ...company,
   })
+
   return company
 }
 

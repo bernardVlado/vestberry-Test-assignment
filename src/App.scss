@@ -2,6 +2,7 @@ html,
 body {
     padding: 0;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .main {
@@ -27,4 +28,8 @@ body {
     text-align: center;
 }
 
-.content {}
+.page {
+    background-color: rgb(235, 237, 247);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

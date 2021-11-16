@@ -3,7 +3,6 @@ import {ApolloProvider} from '@apollo/client'
 import Page from './Page'
 import client from './apollo'
 import styles from 'App.scss'
-
 const App = () =>
   <div className={styles.main}>
     <div className={styles.header}>

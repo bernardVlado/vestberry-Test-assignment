@@ -1,0 +1,27 @@
+.investmentSizeWrapper {
+    padding: 20px;
+    display: flex;
+    background-color: white;
+}
+
+.companiesGrid {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 30px;
+    align-items: center;
+}
+
+.companyRow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    background: black; /* Default color */
+}
+
